@@ -54,25 +54,76 @@
 
     <dependencies>
 
+        <!-- ///// begin artoria //// -->
         <dependency>
             <groupId>com.github.kahlkn</groupId>
             <artifactId>artoria</artifactId>
-            <version>1.0.0.20191020.beta</version>
+            <version>1.0.0.20190645-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <groupId>com.github.kahlkn</groupId>
+            <artifactId>artoria-extend</artifactId>
+            <version>1.0.0.20190645-SNAPSHOT</version>
+        </dependency>
+        <!-- ///// end artoria //// -->
+
+        <!-- ///// begin spring //// -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>2.0.9.RELEASE</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.0.9.RELEASE</version>
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>2.0.9.RELEASE</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.0.9.RELEASE</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- ///// end spring //// -->
+
+        <!-- ///// begin database //// -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- ///// end database //// -->
+
+        <!-- ///// begin json //// -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.68</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- ///// end json //// -->
+
+        <!-- ///// begin encryption //// -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
             <version>1.60</version>
-            <scope>test</scope>
+            <scope>provided</scope>
         </dependency>
+        <!-- ///// end encryption //// -->
 
     </dependencies>
 
