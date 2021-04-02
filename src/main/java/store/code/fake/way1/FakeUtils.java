@@ -13,12 +13,12 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import static artoria.common.Constants.*;
 
 public class FakeUtils {
-    private static Logger log = LoggerFactory.getLogger(artoria.fake.FakeUtils.class);
+    private static Logger log = LoggerFactory.getLogger(FakeUtils.class);
     private static FakeProvider fakeProvider;
 
     public static FakeProvider getFakeProvider() {
         if (fakeProvider != null) { return fakeProvider; }
-        synchronized (artoria.fake.FakeUtils.class) {
+        synchronized (FakeUtils.class) {
             if (fakeProvider != null) { return fakeProvider; }
             FakeUtils.setFakeProvider(new SimpleFakeProvider());
             return fakeProvider;

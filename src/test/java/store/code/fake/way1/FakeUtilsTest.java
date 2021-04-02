@@ -1,6 +1,5 @@
-package store.code.fake;
+package store.code.fake.way1;
 
-import artoria.fake.FakeUtils;
 import artoria.logging.Logger;
 import artoria.logging.LoggerFactory;
 import artoria.test.bean.Menu;
