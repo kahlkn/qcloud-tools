@@ -1,9 +1,9 @@
 package store.code.fake.way1;
 
-import artoria.convert.type.TypeConvertUtils;
 import artoria.exception.ExceptionUtils;
 import artoria.reflect.ReflectUtils;
 import artoria.util.*;
+import store.code.convert.type.way1.TypeConvertUtils;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;

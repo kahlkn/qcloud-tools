@@ -1,11 +1,11 @@
 package store.code.fake.way1;
 
-import artoria.convert.type.TypeConvertUtils;
 import artoria.identifier.IdentifierUtils;
 import artoria.util.Assert;
 import artoria.util.ClassUtils;
 import artoria.util.ObjectUtils;
 import artoria.util.StringUtils;
+import store.code.convert.type.way1.TypeConvertUtils;
 
 import static artoria.common.Constants.SIXTY;
 import static artoria.common.Constants.ZERO;

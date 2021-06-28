@@ -14,8 +14,8 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static artoria.collection.ReferenceMap.Type.SOFT;
 import static artoria.common.Constants.*;
+import static artoria.lang.ReferenceType.SOFT;
 
 /**
  * Cache tools.

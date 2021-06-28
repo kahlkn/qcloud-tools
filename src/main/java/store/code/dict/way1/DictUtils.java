@@ -1,11 +1,11 @@
 package store.code.dict.way1;
 
-import artoria.convert.type.TypeConvertUtils;
 import artoria.logging.Logger;
 import artoria.logging.LoggerFactory;
 import artoria.util.Assert;
 import artoria.util.CollectionUtils;
 import artoria.util.ObjectUtils;
+import store.code.convert.type.way1.TypeConvertUtils;
 
 import java.util.LinkedHashMap;
 import java.util.List;

@@ -1,6 +1,5 @@
 package store.code.cache.way1;
 
-import artoria.convert.type.TypeConvertUtils;
 import artoria.exception.ExceptionUtils;
 import artoria.logging.Logger;
 import artoria.logging.LoggerFactory;
@@ -8,6 +7,7 @@ import artoria.util.Assert;
 import artoria.util.CollectionUtils;
 import artoria.util.MapUtils;
 import artoria.util.ObjectUtils;
+import store.code.convert.type.way1.TypeConvertUtils;
 
 import java.util.*;
 import java.util.concurrent.Callable;

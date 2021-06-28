@@ -1,12 +1,12 @@
 package store.code.fake.way1;
 
-import artoria.convert.type.TypeConvertUtils;
 import artoria.time.DateTime;
 import artoria.time.DateUtils;
 import artoria.util.Assert;
 import artoria.util.ObjectUtils;
 import artoria.util.RandomUtils;
 import artoria.util.StringUtils;
+import store.code.convert.type.way1.TypeConvertUtils;
 
 import java.sql.Timestamp;
 import java.util.Date;

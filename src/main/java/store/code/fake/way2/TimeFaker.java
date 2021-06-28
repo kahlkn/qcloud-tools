@@ -1,10 +1,10 @@
 package store.code.fake.way2;
 
-import artoria.convert.type.TypeConvertUtils;
 import artoria.time.DateTime;
 import artoria.time.DateUtils;
 import artoria.util.ObjectUtils;
 import artoria.util.RandomUtils;
+import store.code.convert.type.way1.TypeConvertUtils;
 
 import java.util.Date;
 

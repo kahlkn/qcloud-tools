@@ -1,9 +1,9 @@
 package store.code.fake.way2;
 
-import artoria.convert.type.TypeConvertUtils;
 import artoria.identifier.IdentifierUtils;
 import artoria.util.ClassUtils;
 import artoria.util.ObjectUtils;
+import store.code.convert.type.way1.TypeConvertUtils;
 
 public class IdentifierFaker extends AbstractFaker {
 
