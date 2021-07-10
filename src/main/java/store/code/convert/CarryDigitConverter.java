@@ -7,12 +7,21 @@ import static artoria.common.Constants.ONE;
 import static artoria.common.Constants.ZERO;
 import static java.util.Collections.unmodifiableMap;
 
+/**
+ * 进制转换器
+ * @author Kahle
+ */
 public class CarryDigitConverter {
     private Map<Character, Integer> sourceNotationsMap;
     private char[] targetNotations;
     private int sourceCarryDigit;
     private int targetCarryDigit;
 
+    /**
+     * 构造方法，需要传入源进制符号和目标进制符号
+     * @param sourceNotations 源进制符号，按顺序
+     * @param targetNotations 目标进制符号，按顺序
+     */
     public CarryDigitConverter(char[] sourceNotations, char[] targetNotations) {
         this.sourceNotationsMap = new HashMap<Character, Integer>();
         this.targetNotations = targetNotations;

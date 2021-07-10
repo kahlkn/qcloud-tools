@@ -5,6 +5,7 @@ import artoria.reflect.ReflectUtils;
 import artoria.util.*;
 import store.code.convert.type.way1.TypeConvertUtils;
 
+import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -28,8 +29,21 @@ public class SimpleFaker implements Faker {
         }
     }
 
+    protected Method[] findWriteMethods(Class<?> clazz) {
+        Assert.notNull(clazz, "Parameter \"clazz\" must not null. ");
+        PropertyDescriptor[] descriptors = ReflectUtils.getPropertyDescriptors(clazz);
+        Map<String, Method> methodMap = new HashMap<String, Method>(descriptors.length);
+        for (PropertyDescriptor descriptor : descriptors) {
+            Method writeMethod = descriptor.getWriteMethod();
+            if (writeMethod != null) { methodMap.put(descriptor.getName(), writeMethod); }
+        }
+        // 因为之前有个可以单纯获取 setter 方法数组的方法，现在为了偷懒直接将某段方法复制过来改改了
+        // toArray：如果数组足够大，则存储列表元素的数组;否则，将为此目的分配相同运行时类型的新数组。
+        return methodMap.values().toArray(new Method[]{});
+    }
+
     <T> T fakeBeanByClass(Class<T> clazz) throws Exception {
-        Method[] writeMethods = ReflectUtils.findWriteMethods(clazz);
+        Method[] writeMethods = findWriteMethods(clazz);
         Map<String, Method> methodMap = new HashMap<String, Method>(writeMethods.length);
         for (Method writeMethod : writeMethods) {
             String attrName = writeMethod.getName().substring(THREE);

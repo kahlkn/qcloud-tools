@@ -1,6 +1,6 @@
 # Code Store
 
-Code store.
+The code store.
 
 
 

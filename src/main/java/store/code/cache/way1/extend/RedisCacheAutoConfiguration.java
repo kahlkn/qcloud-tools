@@ -25,7 +25,7 @@
 //
 //    @Bean
 //    public Cache redisCache(RedisTemplate<String, Object> redisTemplate) {
-//        // TODO : Need to reconsider
+//        // Need to reconsider
 //        long timeToLive = EIGHT * SIXTY * ONE_THOUSAND;
 //        RedisCache redisCache = new RedisCache(redisTemplate, DEFAULT_REDIS_CACHE_NAME, timeToLive, ZERO);
 //        redisCache.setPrintLog(true);
