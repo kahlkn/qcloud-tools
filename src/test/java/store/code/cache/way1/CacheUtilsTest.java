@@ -1,11 +1,9 @@
-package store.code.cache;
+package store.code.cache.way1;
 
 import artoria.logging.Logger;
 import artoria.logging.LoggerFactory;
 import org.junit.Ignore;
 import org.junit.Test;
-import store.code.cache.way1.CacheUtils;
-import store.code.cache.way1.SimpleCache;
 
 import static artoria.common.Constants.*;
 
