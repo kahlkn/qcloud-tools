@@ -1,10 +1,9 @@
-package store.code.dict;
+package store.code.dict.way1;
 
 import artoria.logging.Logger;
 import artoria.logging.LoggerFactory;
 import com.alibaba.fastjson.JSON;
 import org.junit.Test;
-import store.code.dict.way1.DictUtils;
 
 public class DictUtilsTest {
     private static Logger log = LoggerFactory.getLogger(DictUtilsTest.class);
