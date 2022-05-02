@@ -56,15 +56,15 @@
 
         <!-- ///// begin artoria //// -->
         <dependency>
-            <groupId>com.github.kahlkn</groupId>
+            <groupId>io.github.kahle23</groupId>
             <artifactId>artoria</artifactId>
-            <version>1.0.0.20210823.beta</version>
+            <version>1.0.0.20210920g27.beta</version>
         </dependency>
 
         <dependency>
-            <groupId>com.github.kahlkn</groupId>
+            <groupId>io.github.kahle23</groupId>
             <artifactId>artoria-extend</artifactId>
-            <version>1.0.0.20210823.beta</version>
+            <version>1.0.0.20210920g27.beta</version>
         </dependency>
         <!-- ///// end artoria //// -->
 
@@ -111,7 +111,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.68</version>
+            <version>1.2.83</version>
             <scope>provided</scope>
         </dependency>
         <!-- ///// end json //// -->
@@ -172,7 +172,7 @@
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.14.2</version>
+            <version>1.15.3</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -195,6 +195,66 @@
             <version>3.4.2</version>
             <scope>provided</scope>
         </dependency>
+
+        <!--<dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+            <version>2.2.2</version>
+            <scope>provided</scope>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+            <version>4.9.3</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>2.0.9.RELEASE</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- ///// begin zookeeper //// -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <version>3.2.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>3.2.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-client</artifactId>
+            <version>3.2.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- ///// end zookeeper //// -->
+
+        <!-- ///// begin redisson //// -->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.10.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+            <version>3.9.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- ///// end redisson //// -->
 
     </dependencies>
 
