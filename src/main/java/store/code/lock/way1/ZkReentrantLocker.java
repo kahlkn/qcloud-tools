@@ -19,11 +19,10 @@ import static artoria.common.Constants.ZERO;
 /**
  * Zookeeper reentrant mutex lock operator.
  * @see org.apache.curator.framework.recipes.locks.InterProcessMutex
- * @see artoria.lock.Locker
  * @author Kahle
  */
 public class ZkReentrantLocker implements Locker {
-    private static Logger log = LoggerFactory.getLogger(artoria.lock.ZkReentrantLocker.class);
+    private static Logger log = LoggerFactory.getLogger(ZkReentrantLocker.class);
     private static final String REENTRANT_LOCK = "/lock/mutex/reentrant";
     private final CuratorFramework curator;
     private TimeUnit zkTimeUnit = TimeUnit.MILLISECONDS;
