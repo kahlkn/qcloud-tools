@@ -4,7 +4,7 @@ import artoria.logging.Logger;
 import artoria.logging.LoggerFactory;
 import org.junit.Before;
 import org.junit.Test;
-import store.code.template.way1.RenderUtils;
+import store.code.renderer.way1.RenderUtils;
 
 import java.io.StringReader;
 import java.util.HashMap;
