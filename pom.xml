@@ -189,12 +189,30 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- ///// begin aliyun //// -->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>4.3.9</version>
+            <scope>provided</scope>
+        </dependency>
+
         <dependency>
             <groupId>com.aliyun.oss</groupId>
             <artifactId>aliyun-sdk-oss</artifactId>
             <version>3.4.2</version>
             <scope>provided</scope>
         </dependency>
+        <!-- ///// end aliyun //// -->
+
+        <!-- ///// begin alipay //// -->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>4.9.124.ALL</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- ///// end alipay //// -->
 
         <!--<dependency>
             <groupId>org.apache.rocketmq</groupId>
@@ -255,6 +273,20 @@
             <scope>provided</scope>
         </dependency>
         <!-- ///// end redisson //// -->
+
+        <dependency>
+            <groupId>com.github.binarywang</groupId>
+            <artifactId>weixin-java-pay</artifactId>
+            <version>3.6.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.jpush.api</groupId>
+            <artifactId>jpush-client</artifactId>
+            <version>3.4.3</version>
+            <scope>provided</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
