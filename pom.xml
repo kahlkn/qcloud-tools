@@ -58,13 +58,13 @@
         <dependency>
             <groupId>io.github.kahle23</groupId>
             <artifactId>artoria</artifactId>
-            <version>1.0.0.20210920g88.beta</version>
+            <version>1.0.0.20240405.beta</version>
         </dependency>
 
         <dependency>
             <groupId>io.github.kahle23</groupId>
             <artifactId>artoria-extend</artifactId>
-            <version>1.0.0.20210920g88.beta</version>
+            <version>1.0.0.20240405.beta</version>
         </dependency>
         <!-- ///// end artoria //// -->
 
@@ -349,6 +349,22 @@
             <scope>provided</scope>
         </dependency>
         <!-- ///// end mail //// -->
+
+        <!-- ///// begin elasticsearch //// -->
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-high-level-client</artifactId>
+            <version>7.17.16</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- ///// end elasticsearch //// -->
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.5.7</version>
+            <scope>provided</scope>
+        </dependency>
 
     </dependencies>
 
