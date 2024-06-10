@@ -57,6 +57,12 @@
         <!-- ///// begin artoria //// -->
         <dependency>
             <groupId>io.github.kahle23</groupId>
+            <artifactId>kunlun-plus</artifactId>
+            <version>1.0.0.20240217.beta</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.kahle23</groupId>
             <artifactId>artoria</artifactId>
             <version>1.0.0.20240405.beta</version>
         </dependency>
@@ -364,6 +370,48 @@
             <artifactId>hutool-all</artifactId>
             <version>4.5.7</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springboot.ai</groupId>
+            <artifactId>spring-ai-core</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springboot.ai</groupId>
+            <artifactId>spring-ai-azure-openai</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springboot.ai</groupId>
+            <artifactId>spring-ai-openai</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springboot.ai</groupId>
+            <artifactId>spring-ai-spring-boot-autoconfigure</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-ai</artifactId>
+            <version>2023.0.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j</artifactId>
+            <version>0.32.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-azure-open-ai</artifactId>
+            <version>0.32.0</version>
         </dependency>
 
     </dependencies>
